@@ -199,7 +199,7 @@ dates = `1768
 1990
 1705`;
 
-dates_list = dates.split("\n");
+const dates_list = dates.split("\n");
 
 /**
  * Find the two years that sum target_year and then multiply those two years together.
@@ -208,7 +208,7 @@ dates_list = dates.split("\n");
  * @return {Number}             The multiplication of the two years.
  */
 const report_repair = (years, target_year) => {
-  years_object = {};
+  const years_object = {};
 
   for (let i = 0; i < years.length; i++) {
     const year = parseInt(years[i]);
