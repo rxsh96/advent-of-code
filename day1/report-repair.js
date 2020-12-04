@@ -1,7 +1,9 @@
 const fs = require("fs");
 
 const readDataFromFile = () => {
-  return fs.readFileSync("./report-repair.txt", { encoding: "utf-8" }).split("\n");
+  return fs
+    .readFileSync("./report-repair.txt", { encoding: "utf-8" })
+    .split("\r\n");
 };
 
 /**
