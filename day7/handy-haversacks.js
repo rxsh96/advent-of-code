@@ -57,14 +57,14 @@ const handyHaversacks = (data, searchBag) => {
   const masterObject = getDataAsObject(data);
   const containersBags = [];
 
-  // Contains directly
+  // Contains directly.
   for (const key in masterObject) {
     if (hasBag(searchBag, masterObject[key]) && !containersBags.includes(key)) {
       containersBags.push(key);
     }
   }
 
-  //Contains indirectly
+  //Contains indirectly.
   for (const bag of containersBags) {
     for (const key in masterObject) {
       if (hasBag(bag, masterObject[key]) && !containersBags.includes(key)) {
