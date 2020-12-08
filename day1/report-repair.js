@@ -56,4 +56,5 @@ const reportRepairP2 = (years, targetYear) => {
 const datesList = readDataFromFile();
 
 console.log(reportRepair(datesList, 2020)); //355875
+
 console.log(reportRepairP2(datesList, 2020)); //140379120
